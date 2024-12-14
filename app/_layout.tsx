@@ -1,8 +1,9 @@
 import { colors } from "../styles/colors";
+import "@/styles/global.css"
 
 
 
-import { StatusBar } from "react-native"
+import { StatusBar } from "expo-status-bar"
 import { Slot } from "expo-router"
 
 import {
@@ -29,7 +30,7 @@ export default function Layout() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar style="light" />
       <Slot />
     </GestureHandlerRootView>
   )
